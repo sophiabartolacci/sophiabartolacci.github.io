@@ -18,6 +18,7 @@
 
 .nav-bar {
   display: flex;
+  background-color: transparent;
   justify-content: center; /* Center the entire navbar */
   align-items: center;
   width: 100%;
