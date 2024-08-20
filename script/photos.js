@@ -2,21 +2,21 @@ document.addEventListener("DOMContentLoaded", function () {
     let gallery = [
       {
         title: "Places",
-        image: "../photos/coverPhotos/places.jpeg",
+        image: "../photos/coverPhotos/places.jpg",
         alt: "Cover photo for Places",
         link: "./places.html",
         class: "places-cover",
       },
       {
         title: "Portraits",
-        image: "../photos/coverPhotos/portraits.jpeg",
+        image: "../photos/coverPhotos/portraits.jpg",
         alt: "Cover photo for Portraits",
         link: "./portraits.html",
         class: "portraits-cover",
       },
       {
         title: "Drexel FSAE",
-        image: "../photos/coverPhotos/sae.jpeg",
+        image: "../photos/coverPhotos/sae.jpg",
         alt: "Cover photo for Drexel FSAE",
         link: "./sae.html",
         class: "sae-cover",
