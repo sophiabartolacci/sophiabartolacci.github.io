@@ -9,24 +9,33 @@
 }
 
 * {
-  font-family: "Montserrat";
-  color: #105a4e;
-  background-image: url(../images/background.jpg);
   text-decoration: none;
+  color: #105a4e;
   margin: 0;
+}
+
+body {
+  font-family: "Montserrat";
+  background-image: url(../images/background.jpg);
 }
 
 .nav-bar {
   display: flex;
-  justify-content: center; /* Center the entire navbar */
+  justify-content: center; 
   align-items: center;
   width: 100%;
   margin: 30px 0;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 0.2s forwards;
 }
 
 .nav-bar ul {
+  background: transparent;
   display: flex;
-  justify-content: center; /* Center the navbar items */
   align-items: center;
   list-style: none;
   padding: 0;
@@ -34,45 +43,77 @@
 }
 
 .nav-bar ul li {
-  margin: 0 25px; /* Add some spacing between the navbar items */
+  margin: 0 25px; 
+  background: transparent;
 }
 
 .nav-bar ul li a {
+  background: transparent;
   display: flex;
   align-items: center;
   font-size: 20px;
   padding: 10px 20px;
   border-radius: 50px;
   transition: 0.2s;
-  background: transparent;
   border: none;
   cursor: pointer;
 }
 
 .nav-bar ul li a:hover {
-  background: white;
-  color: #578b83;
+  background: rgba(16, 90, 78, .3);
+  color: white;
 }
 
 h1 {
   font-family: Acorn;
   text-align: center;
-  font-size: 60px;
+  font-size: 110px;
   margin-top: 30px;
+  background: transparent;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+p {
+  text-align: center;
+  font-size: 20px;  
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;  
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.description a {
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.description a:hover {
+  color: #578b83; 
 }
 
 .contact {
   font-size: 40px;
 }
 
-.footer {
+footer {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
   font-size: 40px;
   transition: 0.3s ease;
-}
-
-.bx bxl-github {
-  color: red;
+  background: transparent;
 }
