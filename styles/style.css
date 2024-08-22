@@ -16,14 +16,19 @@
 
 body {
   font-family: "Montserrat";
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/background.jpeg); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-position: center; 
 }
+
 
 .nav-bar {
   display: flex;
   justify-content: center; 
   align-items: center;
-  width: 100%;
+  width: 100%; 
   margin: 30px 0;
   transition:
     transform 0.3s ease,
