@@ -11,16 +11,32 @@
 </head>
 <body>
     <header>
-        <nav class="nav-bar">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="./html/about.html">About</a></li>
-            <li><a href="./html/projects.html">Projects</a></li>
-            <li><a href="./html/photos.html">Photography</a></li>
-          </ul>
-        </nav>
+      <a href="/" class="home">Sophia Bartolacci</a>
+      <nav class="nav-bar">
+        <ul class="nav-center">
+          <li><a href="./html/about.html">About</a></li>
+          <li><a href="./html/resume.html">Resume</a></li>
+          <li><a href="./html/projects.html">Projects</a></li>
+          <li><a href="./html/photos.html">Photography</a></li>
+        </ul>
+        <ul class="nav-right">
+          <li>
+            <b>
+              <label class="theme-switch">
+                <input type="checkbox" id="theme-toggle" />
+                <span class="slider"></span>
+              </label>
+            </b>
+          </li>
+        </ul>
+      </nav>
       </header>
       <h1>Hi! I'm Sophia.</h1>
+      <div class="link-boxes">
+        <a href="./html/about.html" class="link-box">About</a>
+        <a href="./html/projects.html" class="link-box">Projects</a>
+        <a href="./html/photos.html" class="link-box">Photography</a>
+      </div>
       <footer>
           <h2 class="contact">Contact</h2>
           <div class="links">
@@ -35,5 +51,6 @@
             </a>
           </div>
       </footer>
+  <script src="./script/darkMode.js"></script>
 </body>
 </html>
