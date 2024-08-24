@@ -74,18 +74,3 @@
 .photo-categories:hover {
   transform: scale(1.05);
 }
-
-.photo-descriptions {
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 35px;
-}
-
-.photo-descriptions a {
-  font-weight: bold;
-  transition: color 0.3s ease, border-bottom-color 0.3s ease;
-}
-
-.photo-descriptions a:hover {
-  color: #578b83; 
-}
