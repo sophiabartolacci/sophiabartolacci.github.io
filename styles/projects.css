@@ -1,0 +1,82 @@
+@keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Style for the link-boxes container */
+.link-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px; 
+    justify-content: center;
+    margin-top: 70px;
+    transition:
+        transform 0.5s ease,
+        opacity 0.3s ease;
+    opacity: 0; 
+    transform: translateY(-50px);
+    animation: fadeInUp 0.5s forwards;
+  }
+  
+.link-box {
+    display: block;
+    justify-content: space-between;
+    height: 450px;
+    padding: 50px;
+    text-decoration: none;
+    border-radius: 35px;
+    background-repeat: no-repeat;
+    position: relative;  
+    transition: transform 0.2s ease;
+}
+
+.link-box:hover {
+    transform: scale(1.05);
+}
+
+.above-text {
+    font-size: 20px;
+    text-align: right;
+    color: #354542;
+}
+
+.box-title {
+    text-align: left;
+    font-family: Acorn;
+    font-size: 35px;
+    color: #354542;
+
+}
+  
+.link-box:first-of-type {
+    background-color: #f3a1ad;
+    width: 500px;  
+}
+
+.link-box:first-of-type img {
+    display: block; 
+    margin: 20px auto 0 auto; 
+    max-width: 100%; 
+} 
+  
+.link-box:nth-of-type(2) {
+    background-color: #a3dcd5;
+    width: 750px; 
+}
+
+.link-box:nth-of-type(2) img {
+    display: block; 
+    margin: 20px auto 0 auto; 
+    max-width: 100%; 
+    height: 87%;
+    border-radius: 15px 5px 35px 5px;
+    margin-left: 50px; /* Space between text and image */
+} 
+  
+.link-box:nth-of-type(3) { 
+    background-color: #C78476;
+    width: 45%; 
+    margin-top: 10px; 
+}
