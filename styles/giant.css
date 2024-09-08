@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Acorn;
+    src: url(../fonts/acorn-medium.ttf);
+}
+
+.subtitle {
+    font-weight: bold;
+    margin-top: 4%;
+    margin-bottom: 0%; 
+    width: 100%; /* Ensures the subtitle spans the full width of the container */
+    text-align: left; /* Aligns the text to the left (adjust as needed) */
+    position: relative; /* Keeps the subtitle in the document flow */
+    padding-left: 5%;
+}
+
+.description {
+    font-weight: semi-bold;
+    text-align: left;
+    color: #4C6662;
+    width: 35%;
+    margin-bottom: 1%;
+    position: relative; /* Keeps the descriptions in the document flow */
+    padding-left: 5%;
+}
+

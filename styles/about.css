@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Acorn;
+    src: url(../fonts/acorn-medium.ttf);
+}
+
+:root {
+    --text-color: #105a4e;
+    --nav-text-hover: white;
+  }
+  
+.dark-mode {
+    --text-color: #e7d2cb;
+    --nav-text-hover: #105a4e;
+  }
+  
+.container {
+    display: flex; /* Enables flexbox layout */
+    align-items: flex-start; /* Aligns items to the top */
+}
+
+.subtitle {
+    /* background-color: blue; */
+    font-weight: bold;
+    margin-top: 4%;
+    width: 50%; 
+    text-align: left; 
+    padding: 1%;
+    padding-left: 10%;
+    transition: transform 0.2s ease;
+}
+
+.subtitle a {
+    font-family: "Acorn";
+    color: #578b83;
+    transition: transform 0.2s ease;
+}
+
+.subtitle a:hover {
+    color: var(--text-color);
+    transform: scale(1.05);
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column; 
+    /* background-color: red; */
+    margin-top: 4%;
+    width: 60%; 
+    padding-left: 10%;
+}
+
+.description {
+    font-weight: semi-bold;
+    color: #4C6662;
+    margin-bottom: 1%;
+    text-align: left;
+    width: 80%;
+    padding: 1%; /* Optional: Add padding for better spacing */
+}

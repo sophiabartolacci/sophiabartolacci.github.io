@@ -7,6 +7,7 @@
   font-family: Montserrat;
   src: url(../fonts/montserrat.ttf);
 }
+
 :root {
   --text-color: #105a4e;
   --nav-background-hover: rgba(16, 90, 78, .3);
@@ -24,7 +25,6 @@
   --background-image: url(../images/dark-mode.JPEG); 
 }
 
-/* Ensure box-sizing */
 *,
 *::before,
 *::after {
@@ -40,7 +40,6 @@
   text-decoration: none;
 }
 
-/* body style affects whole page */
 body {
   background-image: var(--background-image);
   height: 100vh;
@@ -56,15 +55,22 @@ body {
   margin: 0;
 }
 
+h2 {
+  font-family: Acorn;
+  font-size: 45px;
+}
+
 .home {
   font-family: "Acorn";
-  width: 18%;
+  width: 16%;
   font-size: 24px;
   font-weight: bold;
+  transition: transform 0.2s ease;
 }
 
 .home:hover {
   color: var(--text-hover);
+  transform: scale(1.05);
 }
 
 header {
@@ -176,45 +182,6 @@ p {
   color: var(--text-color); 
 }
 
-/* Style for the link-boxes container */
-.link-boxes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 100px; 
-  justify-content: center;
-  margin-top: 70px;
-}
-
-/* Style for individual link-boxes */
-.link-box {
-  display: block;
-  height: 350px;
-  text-align: center;
-  color: white;
-  background-color: aqua;
-  padding: 50px;
-  text-decoration: none;
-  border-radius: 35px;
-  transition: transform 0.2s ease;
-}
-
-.link-box:first-of-type {
-  width: 400px; 
-}
-
-.link-box:nth-of-type(2) {
-  width: 550px; /* Width for the second box */
-}
-
-.link-box:nth-of-type(3) {
-  width: 65%; /* Full width for the third box */
-  margin-top: 10px; /* Space above the third box */
-}
-
-.link-box:hover {
-  transform: scale(1.05);
-}
-
 .contact {
   font-size: 40px;
 }
@@ -222,7 +189,6 @@ p {
 footer {
   text-align: center;
   margin-top: 50px;
-  font-size: 40px;
   transition: 0.3s ease;
   background: transparent;
 }
@@ -231,11 +197,18 @@ footer {
   color: var(--text-color);
   font-size: 30px;
   margin: 0 0px;
+  margin-bottom: 50px;
   text-decoration: none;
+  transition: transform 0.2s ease;
 }
 
 .links a:hover {
   color: var(--text-hover);
+  transform: scale(1.45);
+}
+
+.empty {
+  color: transparent;
 }
 
 .theme-switch {
