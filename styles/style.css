@@ -8,6 +8,13 @@
   src: url(../fonts/montserrat.ttf);
 }
 
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 :root {
   --text-color: #105a4e;
   --nav-background-hover: rgba(16, 90, 78, .3);
@@ -154,13 +161,6 @@ h1 {
   animation: fadeInUp 0.5s forwards;
 }
 
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 p {
   text-align: center;
   font-size: 20px;  
@@ -172,15 +172,6 @@ p {
   animation: fadeInUp 0.8s forwards;
 }
 
-.description a {
-  font-weight: bold;
-  color: var(--text-hover);
-  transition: color 0.3s ease, border-bottom-color 0.3s ease;
-}
-
-.description a:hover {
-  color: var(--text-color); 
-}
 
 .contact {
   font-size: 40px;
