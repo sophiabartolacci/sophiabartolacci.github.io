@@ -1,11 +1,4 @@
-@keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Style for the link-boxes container */
+ /* Style for the link-boxes container */
 .link-boxes {
     display: flex;
     flex-wrap: wrap;
@@ -66,13 +59,13 @@
     width: 750px; 
 }
 
-.link-box:nth-of-type(2) img {
+.link-box:nth-of-type(2) img, .link-box:nth-of-type(3) img {
     display: block; 
     margin: 20px auto 0 auto; 
     max-width: 100%; 
-    height: 87%;
-    border-radius: 15px 5px 35px 5px;
-    margin-left: 50px; /* Space between text and image */
+    height: 90%;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 11px; 
 } 
   
 .link-box:nth-of-type(3) { 

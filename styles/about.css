@@ -1,18 +1,3 @@
-@font-face {
-    font-family: Acorn;
-    src: url(../fonts/acorn-medium.ttf);
-}
-
-:root {
-    --text-color: #105a4e;
-    --nav-text-hover: white;
-  }
-  
-.dark-mode {
-    --text-color: #e7d2cb;
-    --nav-text-hover: #105a4e;
-  }
-  
 .container {
     display: flex; /* Enables flexbox layout */
     align-items: flex-start; /* Aligns items to the top */
@@ -43,7 +28,6 @@
 .description-container {
     display: flex;
     flex-direction: column; 
-    /* background-color: red; */
     margin-top: 4%;
     width: 60%; 
     padding-left: 10%;
@@ -55,5 +39,5 @@
     margin-bottom: 1%;
     text-align: left;
     width: 80%;
-    padding: 1%; /* Optional: Add padding for better spacing */
+    padding: 1%; 
 }
