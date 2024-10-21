@@ -77,10 +77,6 @@
   border-radius: 5px;
 } 
 
-.photo-categories:hover {
-  transform: scale(1.05);
-}
-
 .description a {
   font-weight: bold;
   color: var(--text-color);

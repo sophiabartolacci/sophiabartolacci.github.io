@@ -148,6 +148,9 @@ header {
 }
 
 h1 {
+  width: 70%;
+  margin: auto;
+  text-align: center;
   font-family: Acorn;
   text-align: center;
   font-size: 110px;
@@ -172,6 +175,34 @@ p {
   animation: fadeInUp 0.8s forwards;
 }
 
+p a {
+  font-weight: bold;
+}
+
+p a:hover {
+  color: var(--text-hover);
+}
+
+.subtitle {
+  margin: auto;
+  width: 65%;
+  justify-content: center;
+}
+
+.subtitle a {
+  font-weight: bold;
+}
+
+.subtitle a:hover {
+  color: var(--text-hover);
+}
+
+#second-paragraph {
+  margin: auto;
+  margin-top: 50px;
+  width: 75%;
+  /* text-align: left; */
+}
 
 .contact {
   font-size: 40px;
@@ -184,7 +215,7 @@ footer {
   background: transparent;
 }
 
-.links a {
+.links a i {
   color: var(--text-color);
   font-size: 30px;
   margin: 0 0px;
@@ -193,9 +224,71 @@ footer {
   transition: transform 0.2s ease;
 }
 
-.links a:hover {
+.links a i:hover {
   color: var(--text-hover);
   transform: scale(1.45);
+}
+
+ /* Style for the link-boxes container */
+ .link-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px; 
+  justify-content: center;
+  margin-top: 70px;
+  transition:
+      transform 0.5s ease,
+      opacity 0.3s ease;
+  opacity: 0; 
+  transform: translateY(-50px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+.link-box {
+  display: block;
+  justify-content: space-between;
+  /* height: 430px; */
+  padding: 50px;
+  text-decoration: none;
+  border-radius: 35px;
+  background-repeat: no-repeat;
+  position: relative;  
+  transition: transform 0.2s ease;
+}
+
+.link-box:hover {
+  transform: scale(1.05);
+}
+
+.box-title {
+  text-align: center;
+  font-family: Acorn;
+  font-size: 35px;
+  color: #354542;
+
+}
+
+.link-box:first-of-type {
+  background-color: #f3a1ad;
+  width: 30%; 
+  height: 451px;
+}
+
+.link-box:nth-of-type(2) {
+  background-color: #a3dcd5;
+  width: 50%;
+  height: 451px;
+}
+
+.link-box:nth-of-type(3) { 
+  background-color: #C78476;
+  width: 45%; 
+  height: 451px;
+}
+
+.link-boxes a {
+  font-family: "Acorn";
+  font-size: 45px;
 }
 
 .empty {
