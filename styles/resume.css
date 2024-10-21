@@ -1,0 +1,23 @@
+:root {
+    --text-hover: #578b83;
+  }
+  
+  .dark-mode {
+    --text-hover: #283735;
+  }
+  
+  h1 i {
+    font-size: 70px;
+    padding-left: 15px;
+    transition: transform 0.2s ease;
+}
+
+h1 i:hover {
+    color: var(--text-hover);
+    transform: scale(1.15);
+}
+
+.resume {
+  margin: auto;
+  justify-content: center;
+}

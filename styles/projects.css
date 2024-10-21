@@ -16,8 +16,9 @@
 .link-box {
     display: block;
     justify-content: space-between;
-    height: 450px;
-    padding: 50px;
+    /* height: 300px; */
+    padding: 10px;
+    padding-left: 40px;
     text-decoration: none;
     border-radius: 35px;
     background-repeat: no-repeat;
@@ -30,8 +31,8 @@
 }
 
 .above-text {
+    margin: 0;
     font-size: 20px;
-    text-align: right;
     color: #354542;
 }
 
@@ -61,15 +62,26 @@
 
 .link-box:nth-of-type(2) img, .link-box:nth-of-type(3) img {
     display: block; 
-    margin: 20px auto 0 auto; 
     max-width: 100%; 
-    height: 90%;
-    border-radius: 15px 15px 0px 0px;
+    height: 73%;
     margin-top: 11px; 
+} 
+
+.link-box:nth-of-type(2) img{
+    padding-right: 20px;
+    border-radius: 15px 15px 0px 0px;
 } 
   
 .link-box:nth-of-type(3) { 
     background-color: #C78476;
-    width: 45%; 
-    margin-top: 10px; 
+    width: 800px; 
+}
+
+.link-box:nth-of-type(3) img{
+    padding-left: 80px;
+    border-radius: 15px 15px 0px 0px;
+} 
+
+.description a {
+    width: 100%;
 }
