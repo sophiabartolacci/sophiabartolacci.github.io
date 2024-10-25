@@ -19,6 +19,7 @@
     width: 60%; 
     text-align: left; 
     padding: 1%;
+    transition: transform 0.2s ease;
 }
 
 .subtitle a {
