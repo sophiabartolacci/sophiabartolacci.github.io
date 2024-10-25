@@ -1,17 +1,24 @@
+@keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
 .container {
-    display: flex; /* Enables flexbox layout */
-    align-items: flex-start; /* Aligns items to the top */
+    display: block;
+    align-items: flex-start; 
 }
 
 .subtitle {
     /* background-color: blue; */
+    /* margin: auto;
+    justify-content: left; */
     font-weight: bold;
-    margin-top: 4%;
-    width: 50%; 
+    margin-top: 1%;
+    width: 60%; 
     text-align: left; 
     padding: 1%;
-    padding-left: 10%;
-    transition: transform 0.2s ease;
 }
 
 .subtitle a {
@@ -26,18 +33,18 @@
 }
 
 .description-container {
-    display: flex;
-    flex-direction: column; 
-    margin-top: 4%;
-    width: 60%; 
-    padding-left: 10%;
+    /* background-color: red; */
+    display: block;
+    margin: auto;
+    /* margin-top: 25%; */
+    width: 90%; 
+    padding-left: 16%;
 }
 
 .description {
     font-weight: semi-bold;
     color: #4C6662;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
     text-align: left;
-    width: 80%;
-    padding: 1%; 
+    width: 70%;
 }
