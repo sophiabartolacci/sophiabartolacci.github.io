@@ -18,6 +18,9 @@ h1 i:hover {
 }
 
 .resume {
-  margin: auto;
-  justify-content: center;
+  display: block;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
