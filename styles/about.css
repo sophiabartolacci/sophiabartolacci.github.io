@@ -44,7 +44,7 @@
 
 .description {
     font-weight: semi-bold;
-    color: #4C6662;
+    color: var(--text-color);
     margin-bottom: 2%;
     text-align: left;
     width: 70%;
