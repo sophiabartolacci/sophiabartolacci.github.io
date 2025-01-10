@@ -1,0 +1,36 @@
+main {
+   padding: 0 1rem; 
+}
+
+p {
+    animation: fadeInUp 0.5s forwards;
+    opacity: 0; 
+    transform: translateY(-50px);
+    transition:
+        transform 0.5s ease,
+        opacity 0.3s ease;
+    line-height: 23px;
+    margin-top: .25rem;
+}
+
+h2, h3 {
+    animation: fadeInUp 0.5s forwards;
+    font-size: 1.3rem;
+    font-weight: 700;
+    opacity: 0; 
+    transform: translateY(-50px);
+    transition:
+        transform 0.5s ease,
+        opacity 0.3s ease;
+    margin-bottom: 0;
+    margin-top: 1.8rem;
+    text-align: center;
+}
+
+/* h2 a {
+    color: var(--text-hover);
+}
+
+h2 a:hover {
+    color: var(--text-color);
+} */

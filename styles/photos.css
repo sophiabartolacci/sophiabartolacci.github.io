@@ -1,0 +1,28 @@
+
+.photos {
+    display: flex;
+    gap: .5rem; 
+    padding: 0 .5rem;
+  }
+  
+.column {
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem; 
+  }
+
+/* for cover photos in photos.html */
+.photo-categories a img {
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px 10px 10px 40px;
+    transition: transform 0.2s ease;
+}
+
+.photo-categories a img:hover {
+    transform: scale(1.05);
+}
+
+/* TODO: add title to cover photos */
+
+
