@@ -11,13 +11,13 @@ p {
     padding: 0 0.9375rem;
 }
 
-section ul {
+.parent ul {
     margin-top: .5rem;
     padding-left: var(--rhythm * 1.35);
     padding-right: var(--rhythm);
 }
 
-section li {
+.parent li {
     color: var(--lighter-text-color);
     font-weight: 500;
     margin-bottom: .35rem;
@@ -41,13 +41,14 @@ p + ul {
     }
 }
 
-.experience {
+.section {
     font-size: 2rem;
     padding: 0;
     text-align: center;
 }
 
 .position, .place {
+    color: var(--text-color);
     font-size: 1rem;
     font-weight: bold;
     margin: .25rem 0;
@@ -55,11 +56,18 @@ p + ul {
 }
 
 .position {
-    margin: 1rem 0 0 0;
+    margin: 2rem 0 0 0;
 }
 
 .time {
     font-style: italic;
     margin: .25rem 0;
     text-align: left;
+}
+
+@media screen and (min-width: 830px) {
+    .parent {
+        display: flex;
+        gap: 5rem;
+    }
 }
