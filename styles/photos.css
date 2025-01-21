@@ -11,11 +11,15 @@
     gap: 1rem; 
   }
 
+  .photo-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
 /* for cover photos in photos.html */
 .photo-categories a img {
-    background: transparent;
-    border-radius: 10px;
-    padding: 10px 10px 10px 40px;
     transition: transform 0.2s ease;
 }
 
