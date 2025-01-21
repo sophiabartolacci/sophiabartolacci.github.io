@@ -53,11 +53,11 @@
 }
 
 body {
-  background-attachment: fixed; 
+  /* background-attachment: fixed; 
   background-image: var(--background-image);
   background-position: center; 
   background-repeat: no-repeat; 
-  background-size: cover; 
+  background-size: cover;  */
   box-sizing: border-box;
 }
 
@@ -192,17 +192,17 @@ footer a i:hover {
 }
 
 .link-boxes {
-  animation: fadeInUp 0.5s forwards;
+  /* animation: fadeInUp 0.5s forwards; */
   display: flex;
   flex-wrap: wrap;
   gap: 30px; 
   justify-content: center;
   margin-top: 30px;
-  opacity: 0; 
+  /* opacity: 0; 
   transform: translateY(-50px);
   transition:
       transform 0.5s ease,
-      opacity 0.3s ease;
+      opacity 0.3s ease; */
 }
 
 .link-box {

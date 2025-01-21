@@ -3,17 +3,17 @@ h1 a {
 }
 
 .link-boxes {
-    animation: fadeInUp 0.5s forwards;
+    /* animation: fadeInUp 0.5s forwards; */
     display: flex;
     flex-wrap: wrap;
     gap: 30px; 
     justify-content: center;
     margin-top: 30px;
-    opacity: 0; 
+    /* opacity: 0; 
     transform: translateY(-50px);
     transition:
         transform 0.5s ease,
-        opacity 0.3s ease;
+        opacity 0.3s ease; */
   }
   
   .link-box {
@@ -53,16 +53,16 @@ h1 a {
     padding-left: 0;
 
     li {
-        animation: fadeInUp 0.8s forwards;
+        /* animation: fadeInUp 0.8s forwards; */
         color: var(--project-text-color);
         line-height: 1.6;
         margin-bottom: 20px;
         margin-top: 20px;
-        opacity: 0;
+        /* opacity: 0;
         transition:
           transform 0.3s ease,
           opacity 0.3s ease;   
-        transform: translateY(-20px);
+        transform: translateY(-20px); */
     }
 }
 
@@ -108,12 +108,12 @@ h1 a {
 }
 
 .login-image {
-    animation: fadeInUp 0.5s forwards;
+    /* animation: fadeInUp 0.5s forwards; */
     margin: 2.5rem 3.75rem; 
     border-radius: 5px;
-    transition:
+    /* transition:
         transform 0.5s ease,
         opacity 0.3s ease;
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-50px); */
 }
