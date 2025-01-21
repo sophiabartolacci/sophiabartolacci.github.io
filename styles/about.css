@@ -3,34 +3,42 @@ main {
 }
 
 p {
-    animation: fadeInUp 0.5s forwards;
-    opacity: 0; 
+    /* animation: fadeInUp 0.5s forwards; */
+    /* opacity: 0; 
     transform: translateY(-50px);
     transition:
         transform 0.5s ease,
-        opacity 0.3s ease;
+        opacity 0.3s ease; */
     line-height: 23px;
     margin-top: .25rem;
 }
 
 h2, h3 {
-    animation: fadeInUp 0.5s forwards;
+    /* animation: fadeInUp 0.5s forwards; */
     font-size: 1.3rem;
     font-weight: 700;
-    opacity: 0; 
+    /* opacity: 0; 
     transform: translateY(-50px);
     transition:
         transform 0.5s ease,
-        opacity 0.3s ease;
+        opacity 0.3s ease; */
     margin-bottom: 0;
     margin-top: 1.8rem;
     text-align: center;
 }
 
-/* h2 a {
-    color: var(--text-hover);
-}
+@media screen and (min-width: 768px) {
+    main {
+        padding: 0 2rem;
+    }
 
-h2 a:hover {
-    color: var(--text-color);
-} */
+    p {
+        line-height: 25px;
+        margin-top: .5rem;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+}
