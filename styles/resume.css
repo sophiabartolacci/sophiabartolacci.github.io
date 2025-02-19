@@ -67,7 +67,8 @@ p + ul {
 
 @media screen and (min-width: 830px) {
     .parent {
-        display: flex;
-        gap: 5rem;
+        display: grid;
+        grid-template-columns: 35% 65%;
+        justify-items: center;
     }
 }
