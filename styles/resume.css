@@ -1,3 +1,7 @@
+h2 {
+    padding-top: 2.5rem;
+}
+
 h2, h3, h4, h5, h6 {
     font-family: var(--acorn-font);
     font-weight: bold;
@@ -9,6 +13,30 @@ h2, h3, h4, h5, h6 {
 
 p {
     padding: 0 0.9375rem;
+}
+
+.section {
+    font-size: 2rem;
+    padding: 2rem 0 0 0;
+    text-align: center;
+}
+
+.position, .place {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: .25rem 0;
+    text-align: left;
+}
+
+.position {
+    margin: 2rem 0 0 0;
+}
+
+.time {
+    font-style: italic;
+    margin: .25rem 0;
+    text-align: left;
 }
 
 .parent ul {
@@ -41,28 +69,14 @@ p + ul {
     }
 }
 
-.section {
-    font-size: 2rem;
-    padding: 0;
-    text-align: center;
+.section:nth-of-type(2) {
+    padding: 3.5rem 0 0 0;
 }
 
-.position, .place {
-    color: var(--text-color);
-    font-size: 1rem;
-    font-weight: bold;
-    margin: .25rem 0;
-    text-align: left;
-}
-
-.position {
-    margin: 2rem 0 0 0;
-}
-
-.time {
-    font-style: italic;
-    margin: .25rem 0;
-    text-align: left;
+@media screen and (min-width: 650px) {
+    p {
+      font-size: .9rem;
+    }
 }
 
 @media screen and (min-width: 830px) {
@@ -70,5 +84,41 @@ p + ul {
         display: grid;
         grid-template-columns: 35% 65%;
         justify-items: center;
+    }
+
+    h2, h3, h4, h5, h6 {
+        margin-top: 2.75rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    h2 {
+        padding-top: 3rem;
+    }
+    
+    h2, h3, h4, h5, h6 {
+        font-size: 1.75rem;
+        margin-top: 3rem;
+    }
+
+    .section {
+        font-size: 2.5rem;
+    }
+    
+    .section:nth-of-type(2) {
+        padding: 4.5rem 0 0 0;
+    }
+
+    .position, .place, .time {
+        font-size: 1.25rem;
+    }
+
+    .parent li {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+
+    .experience li {
+        line-height: 1.875rem;
     }
 }
