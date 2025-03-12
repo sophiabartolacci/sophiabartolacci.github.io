@@ -213,10 +213,6 @@ footer a i:hover {
   width: 300px; 
 }
 
-.link-box:hover {
-  transform: scale(1.05);
-}
-
 .above-text {
   color: var(--project-text-color);
   font-size: 1.125rem;
@@ -274,3 +270,33 @@ footer a i:hover {
   .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
     transform: rotate(-45deg);
   }
+
+@media screen and (min-width: 650px) {
+  h1 {
+    font-size: 3.75rem;
+    padding-top: 100px;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  footer h1 {
+    font-size: 2.75rem;
+  }
+
+  footer a i {
+    font-size: 2rem;
+  }
+}
+
+
+@media screen and (min-width: 1280px) {
+  h1 {
+    font-size: 6.875rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
