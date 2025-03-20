@@ -1,5 +1,5 @@
 p {
-  padding: 0 1rem;
+  padding: 0 12rem;
 }
 
 .container {
@@ -11,9 +11,34 @@ p {
   transform: scale(1.05);
 }
 
+.link-box:first-of-type img {
+  margin-top: 20px; 
+  margin-left: 40px;
+}
+
+.link-box:nth-of-type(2) img, .link-box:nth-of-type(3) img, .link-box:nth-of-type(4) img {
+  border-radius: 15px 15px 0px 0px;
+  margin-top: 2rem; 
+  margin-left: 0.8125rem;
+} 
+
 @media screen and (min-width: 690px) {
+  .above-text {
+    font-size: 1.3rem;
+  }
+
+  .box-title {
+    font-size: 2.25rem;
+  }
+
+  .link-box {
+    padding-top: 25px;
+    padding-left: 40px;
+    width: 300px;
+  }
+
   .link-box:first-of-type {
-    width: 250px;
+    width: 18.75rem;
   }
 
   .link-box:nth-of-type(2) {
@@ -27,9 +52,37 @@ p {
   .link-box:nth-of-type(4) {
     width: 550px;
   }
+
+  .link-box:first-of-type img, .link-box:nth-of-type(2) img, .link-box:nth-of-type(3) img, .link-box:nth-of-type(4) img {
+    margin-top: 3rem; 
+  }
+
+  .link-box:nth-of-type(2) img, .link-box:nth-of-type(3) img {
+    margin-left: 2rem;
+  } 
+
+  .link-box:nth-of-type(4) img {
+    margin-left: 4rem;
+  }
 }
 
-@media screen and (min-width: 1042px) {
+@media screen and (min-width: 760px) {
+  .link-box:first-of-type img {
+    margin-left: .8rem;
+    margin-top: 55px;
+  }
+
+  .link-box:nth-of-type(2) img {
+    margin-left: 0;
+  }
+
+  .link-box:nth-of-type(3) img {
+    margin-left: 3rem;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
   .above-text {
     font-size: 1.35rem;
   }
@@ -39,30 +92,75 @@ p {
   }
 
   .link-box {
-    height: 350px;
     padding-top: 35px;
   }
   
   .link-box:first-of-type {
     width: 350px;
+
+    img {
+      margin-left: 2rem;
+      margin-top: 2rem; 
+    }
   }
 
   .link-box:nth-of-type(2) {
-    width: 450px;
+    width: 500px;
+
+    img {
+      margin-left: .5rem; 
+      margin-top: 2rem; 
+    }
   }
 
   .link-box:nth-of-type(3) {
-    width: 600px;
+    width: 700px;
   }
 
   .link-box:nth-of-type(4) {
-    width: 650px;
+    width: 800px;
+
+    img {
+      margin-left: 6rem; 
+    }
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .link-boxe {
-    padding-top: 45px;
+  .link-boxes {
+    gap: 60px;
+  }
+
+  .link-box:first-of-type {
+    width: 450px;
+
+    img {
+      margin-left: 3rem;
+    }
+  }
+
+  .link-box:nth-of-type(2) {
+    width: 700px;
+
+    img {
+      margin-left: 2rem; 
+    }
+  }
+
+  .link-box:nth-of-type(3) {
+    width: 800px;
+
+    img {
+      margin-left: 5.5rem; 
+    }
+  }
+
+  .link-box:nth-of-type(4) {
+    width: 950px;
+
+    img {
+      margin-left: 10rem; 
+    }
   }
 } 
 
