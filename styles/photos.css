@@ -20,26 +20,11 @@
   justify-content: center;
 }
 
-.photo-card {
-  position: relative;
-}
-
 .photo-card img {
   border-radius: 5px;
   display: block;
   height: auto;
   width: 100%;
-}
-
-.photo-title {
-  color: white;
-  font-family: var(--acorn-font);
-  font-size: 2rem;
-  left: 50%;
-  position: absolute;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .photo-categories a img {
