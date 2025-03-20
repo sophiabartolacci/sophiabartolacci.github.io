@@ -43,18 +43,6 @@ p {
     margin: 0 auto;
 }
 
-.parent ul {
-    margin-top: .5rem;
-    padding-left: var(--rhythm * 1.35);
-    padding-right: var(--rhythm);
-}
-
-.parent li {
-    color: var(--lighter-text-color);
-    font-weight: 500;
-    margin-bottom: .35rem;
-}
-
 h2 + ul {
     padding-left: 0;
     margin: 0;
@@ -71,6 +59,18 @@ p + ul {
         margin: 1rem 0;
         line-height: 1.5rem;
     }
+}
+
+.parent ul {
+    margin-top: .5rem;
+    padding-left: var(--rhythm * 1.35);
+    padding-right: var(--rhythm);
+}
+
+.parent li {
+    color: var(--lighter-text-color);
+    font-weight: 500;
+    margin-bottom: .35rem;
 }
 
 .section:nth-of-type(2) {
