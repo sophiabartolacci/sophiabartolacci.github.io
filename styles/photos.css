@@ -42,8 +42,6 @@
   transform: translate(-50%, -50%);
 }
 
-
-/* for cover photos in photos.html */
 .photo-categories a img {
   transition: transform 0.2s ease;
 }
@@ -52,4 +50,8 @@
   transform: scale(1.05);
 }
 
-
+@media (min-width: 560px) and (max-width: 780px) {
+  .container {
+    flex-wrap: nowrap;
+  }
+}
