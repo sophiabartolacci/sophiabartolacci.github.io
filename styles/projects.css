@@ -17,7 +17,7 @@ p {
 }
 
 .link-box:nth-of-type(2) img, .link-box:nth-of-type(3) img, .link-box:nth-of-type(4) img {
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 15px 15px 0 0;
   margin-top: 2rem; 
   margin-left: 0.8125rem;
 } 

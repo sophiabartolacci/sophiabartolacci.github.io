@@ -103,14 +103,6 @@ header {
         }
       }
     }
-  }
-
-p a {
-    font-weight: bold;
-}
-
-p a:hover {
-    color: var(--text-hover);
 }
   
   nav {
@@ -152,6 +144,13 @@ p a:hover {
     }
   }
   
+p a {
+  font-weight: bold;
+}
+
+p a:hover {
+  color: var(--text-hover);
+}
 
 h1 {
     font-family: var(--acorn-font);
@@ -191,6 +190,17 @@ footer a i:hover {
 
 .home {
   display: none;  
+}
+
+.footer-hidden-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .link-boxes {
