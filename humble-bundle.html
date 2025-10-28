@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects</title>
+    <title>Humble Bundle Redesign</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -24,6 +24,12 @@
     />
     <link
       href="styles/blueboard.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="styles/humble-bundle.css"
       media="screen"
       rel="stylesheet"
       type="text/css"
@@ -56,30 +62,30 @@
     </header>
     <main>
       <h1>
-        <a href="https://cs375blueboard.fly.dev/" target="_blank">Blueboard</a>
+        <a href="https://www.figma.com/community/file/1564470659771037730/humble-bundle-redesign" target="_blank">Humble Bundle Redesign</a>
       </h1>
       <div class="login-image">
         <picture>
           <source
             media="(min-width: 1280px)"
-            srcset="./images/blueboard-larger.png"
+            srcset="./images/humble-bundle-larger.png"
           />
           <source
             media="(min-width: 650px)"
-            srcset="./images/blueboard-medium.png"
+            srcset="./images/humble-bundle-medium.png"
           />
           <source />
           <img
-            src="./images/blueboard-smaller.webp"
-            alt="Blueboard Login Screen"
+            src="./images/humble-bundle-smaller.png"
+            alt="Humble Bundle Redesign"
           />
         </picture>
       </div>
       <div class="link-boxes">
         <div id="link-box2">
           <div class="website">
-            <a href="https://cs375blueboard.fly.dev/" target="_blank"
-              >Explore our full website!</a
+            <a href="https://www.figma.com/community/file/1564470659771037730/humble-bundle-redesign" target="_blank"
+              >View the design on Figma!</a
             >
           </div>
         </div>
@@ -90,77 +96,57 @@
           <div class="description">
             <ul>
               <li>
-                In my web development class, I collaborated with a group of five
-                over five weeks to create
-                <a href="https://cs375blueboard.fly.dev/" target="_blank"
-                  >Blueboard</a
-                >, an interactive online learning platform designed for both
-                students and professors.
+                Humble Bundle's website faced significant usability challenges that were hindering the user experience. The cluttered navigation, inconsistent filtering system, and disruptive promotional banner created visual overload and made it difficult for users to find and purchase digital content effectively.
               </li>
               <li>
-                Blueboard offers a variety of tools to enhance the learning
-                experience, including quizzes, course materials, and more.
+                I redesigned the website to address these pain points through comprehensive user research and strategic design improvements. My approach included conducting card sorting exercises with three participants to understand how users naturally organize information, followed by applying established UX heuristics to create a more intuitive site structure.
               </li>
               <li>
-                This project allowed us to work together to design and implement
-                a user-friendly platform that supports both teaching and
-                learning.
+                The redesign resulted in a significantly cleaner and more user-friendly experience that reduced cognitive load while maintaining Humble Bundle's charitable mission and visual appeal. The new design improved content discoverability, streamlined the shopping process, and created a more cohesive experience for the platform's tech-savvy customer base who value both digital content and charitable giving.
               </li>
             </ul>
           </div>
         </div>
         <div class="link-box">
-          <div class="box-title">Features</div>
+          <div class="box-title">Research & Process</div>
           <div class="description">
             <ul>
               <li>
-                <strong>User Authentication: </strong>Professors and students
-                can create accounts and log in securely.
+                <strong>User Testing:</strong> Conducted card sorting exercises with three users to understand navigation preferences, revealing insights from minimalist to detailed organizational approaches.
               </li>
               <li>
-                <strong>Quiz Creation and Management: </strong>Professors can
-                create quizzes with various question types, including
-                multiple-choice, short answer, long answer, and image upload.
-                Quizzes can be autograded or manually graded.
+                <strong>Heuristic Evaluation:</strong> Applied Nielsen's usability principles to identify key issues including redundant promotional elements and inconsistent visual hierarchy.
               </li>
               <li>
-                <strong>Course Management: </strong>Professors can create
-                courses, generate registration codes, and manage course
-                materials.
+                <strong>Information Architecture:</strong> Redesigned site structure balancing simplicity with depth, incorporating user feedback to create intuitive navigation paths.
               </li>
               <li>
-                <strong>Student Interaction: </strong>Students can enroll in
-                courses, participate in quizzes, and view grades.
+                <strong>Visual Design:</strong> Maintained Humble Bundle's clean aesthetic while improving contrast, spacing, and content organization to reduce visual clutter.
               </li>
               <li>
-                <strong>File Upload and Download: </strong>Supports uploading
-                images as part of quiz answers and downloading images from the
-                server.
-              </li>
-              <li>
-                <strong>Session Management: </strong>Ensures secure access to
-                various routes based on user roles (student or professor).
-              </li>
-              <li>
-                <strong>Deployment Ready: </strong>Configured for deployment on
-                platforms like Fly.io.
+                <strong>Responsive Design:</strong> Ensured consistent experience across devices with improved mobile navigation and touch-friendly interface elements.
               </li>
             </ul>
           </div>
         </div>
         <div class="link-box">
-          <div class="box-title">Technology Stack</div>
+          <div class="box-title">Key Improvements</div>
           <div class="description">
             <ul>
-              <li><strong>Backend: </strong>Node.js, Express.js</li>
-              <li><strong>Frontend: </strong>HTML, CSS, Javascript</li>
-              <li><strong>Database: </strong>PostgreSQL</li>
               <li>
-                <strong>Authentication: </strong>Session-based using
-                express-session
+                <strong>Streamlined Navigation:</strong> Removed redundant promotional banner and reorganized menu structure based on user card sorting results.
               </li>
               <li>
-                <strong>Deployment: </strong>Configured for Fly.io deployment
+                <strong>Enhanced Store Layout:</strong> Redesigned cluttered store page with consistent filtering options and improved content presentation to highlight key elements.
+              </li>
+              <li>
+                <strong>Improved Visual Hierarchy:</strong> Applied consistent color scheme and spacing to reduce cognitive load and make colorful bundle covers stand out effectively.
+              </li>
+              <li>
+                <strong>Optimized Filtering:</strong> Implemented unified filter system across all pages, allowing users to sort by popularity, content type, and release status seamlessly.
+              </li>
+              <li>
+                <strong>Accessibility Focus:</strong> Enhanced contrast ratios, improved keyboard navigation, and ensured screen reader compatibility throughout the redesign.
               </li>
             </ul>
           </div>

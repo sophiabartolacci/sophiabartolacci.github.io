@@ -1,24 +1,30 @@
+p {
+    padding: 0 0.9375rem;
+}
+
 h2 {
     padding-top: 2.5rem;
 }
 
 h2, h3, h4, h5, h6 {
     font-family: var(--acorn-font);
-    font-weight: bold;
     font-size: var(--rhythm);
+    font-weight: bold;
     margin-bottom: 0;
     margin-top: var(--rhythm);
     padding-left: 0.9375rem;
 }
 
-p {
-    padding: 0 0.9375rem;
+.parent {
+    margin: 0 auto;
 }
 
-.section {
-    font-size: 2rem;
-    padding: 2rem 0 0 0;
-    text-align: center;
+.position {
+    margin: 3rem 0 0 0;
+}
+
+.position:first-of-type {
+    margin-top: .25rem;
 }
 
 .position, .place {
@@ -29,36 +35,87 @@ p {
     text-align: left;
 }
 
-.position {
-    margin: 2rem 0 0 0;
+.place {
+    margin-top: 3rem;
+}
+
+.place:first-of-type {
+    margin-top: .25rem;
+}
+
+.section {
+    font-size: 2rem;
+    padding: 2rem 0 0 0;
+    text-align: center;
 }
 
 .time {
+    margin: .25rem 0;
+    text-align: left;
+}
+
+.time-exp {
     font-style: italic;
     margin: .25rem 0;
     text-align: left;
 }
 
-.parent {
-    margin: 0 auto;
+.time-proj {
+    font-style: normal;
+    margin: .25rem 0;
+    text-align: left;
+}
+
+.job-header, .project-header {
+    align-items: baseline;
+    display: flex;
+    gap: 0.5rem;
+    margin: 2rem 0 0.5rem 0;
+    padding: 0 0.9375rem;
+}
+
+.job-header em {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.job-header strong, .project-header strong {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.job-header .time, .project-header .time {
+    font-style: normal;
+    font-weight: normal;
+    margin-left: auto;
+}
+
+.project-header .tools {
+    font-size: 0.9em;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.place span {
+    font-size: 0.95rem;
+    font-weight: 500;
+    font-style: italic;
 }
 
 h2 + ul {
-    padding-left: 0;
     margin: 0;
+    padding-left: 0;
+}
 
-    li {
+p + ul li {
+    line-height: 1.5rem;
+    margin: 1rem 0;
+}
+
+h2 + ul li {
     font-weight: bold;
     margin-top: .35rem;
     padding-left: 1rem;
-    }
-}
-
-p + ul {
-    li {
-        margin: 1rem 0;
-        line-height: 1.5rem;
-    }
 }
 
 .parent ul {
@@ -74,12 +131,12 @@ p + ul {
 }
 
 .section:nth-of-type(2) {
-    padding: 3.5rem 0 0 0;
+    padding: 3.5rem 0 2rem 0;
 }
 
 @media screen and (min-width: 650px) {
     p {
-      font-size: .9rem;
+        font-size: .9rem;
     }
 }
 
@@ -106,25 +163,33 @@ p + ul {
         margin-top: 3rem;
     }
 
-    .section {
-        font-size: 2.5rem;
-    }
-    
-    .section:nth-of-type(2) {
-        padding: 4.5rem 0 0 0;
-    }
-
-    .position, .place, .time {
-        font-size: 1.25rem;
-    }
-
     .parent li {
         font-size: 1.125rem;
         line-height: 1.5rem;
     }
 
+    .position, .place {
+        font-size: 1.25rem;
+    }
+
+    .time, .time-exp, .time-proj {
+        font-size: 1rem;
+    }
+
+    .section {
+        font-size: 2.5rem;
+    }
+    
     .experience li {
         line-height: 1.875rem;
+    }
+
+    .job-header, .project-header {
+        font-size: 1.25rem;
+    }
+
+    .section:nth-of-type(2) {
+        padding: 4.5rem 0 1rem 0;
     }
 }
 
