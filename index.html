@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <!-- Preload critical resources -->
+    <link
+      rel="preload"
+      href="./fonts/montserrat.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/acorn-medium.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="preload" href="./images/light-mode.JPEG" as="image" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -47,6 +63,10 @@
           <li><a href="resume.html">Resume</a></li>
         </ul>
       </nav>
+      <label class="theme-switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider"></span>
+      </label>
     </header>
     <main>
       <h1>Hi! I'm Sophia</h1>
@@ -57,25 +77,42 @@
       </p>
       <div class="container">
         <div class="link-boxes">
-          <a
-            href="https://www.figma.com/community/file/1431462238976577710/giant-app-redesign"
-            target="_blank"
-            class="link-box"
-          >
-            <span class="above-text">Figma</span>
-            <div class="box-title">Redesign of GIANT's App</div>
-            <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcset="./images/giant-1280.png"
-              />
-              <source
-                media="(min-width: 760px)"
-                srcset="./images/giant-760.png"
-              />
-              <source />
-              <img src="./images/giant.webp" alt="Giant App" />
-            </picture>
+          <a href="due-date-demon.html" class="link-box">
+            <span class="above-text"
+              >AWS Lambda, Python, Notion API, Discord</span
+            >
+            <div class="box-title">Due Date Demon</div>
+            <div class="terminal-preview-small">
+              <div class="terminal-header-small">
+                <div class="terminal-buttons-small">
+                  <span class="terminal-button-small red"></span>
+                  <span class="terminal-button-small yellow"></span>
+                  <span class="terminal-button-small green"></span>
+                </div>
+                <span class="terminal-title-small">Discord Bot Output</span>
+              </div>
+              <div class="terminal-content-small">
+                <div class="terminal-line-small">
+                  🚨 <strong>2 ASSIGNMENTS DUE SOON!</strong>
+                </div>
+                <div class="terminal-line-small"></div>
+                <div class="terminal-line-small">─────────────────────────</div>
+                <div class="terminal-line-small">
+                  📚 <strong>Upcoming Assignments</strong>
+                </div>
+                <div class="terminal-line-small">─────────────────────────</div>
+                <div class="terminal-line-small"></div>
+                <div class="terminal-line-small">
+                  💻 <strong>CS 380: Database Project</strong>
+                </div>
+                <div class="terminal-line-small">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📐 Project
+                </div>
+                <div class="terminal-line-small">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📅 12/22 11:59PM
+                </div>
+              </div>
+            </div>
           </a>
           <a href="blueboard.html" class="link-box">
             <span class="above-text">Fly.io, Node.js, PostgreSQL</span>
@@ -97,6 +134,31 @@
               <img
                 src="./images/blueboard-login.webp"
                 alt="Blueboard Login Screen"
+                loading="lazy"
+              />
+            </picture>
+          </a>
+          <a href="humble-bundle.html" class="link-box">
+            <span class="above-text">UX Research, Figma, User Testing</span>
+            <div class="box-title">Humble Bundle Redesign</div>
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="./images/humble-bundle-medium.png"
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="./images/humble-bundle-smaller.png"
+              />
+              <source
+                media="(min-width: 760px)"
+                srcset="./images/humble-bundle-smaller.png"
+              />
+              <source />
+              <img
+                src="./images/humble-bundle-smaller.png"
+                alt="Humble Bundle Redesign"
+                loading="lazy"
               />
             </picture>
           </a>
@@ -106,7 +168,7 @@
           >
             <span class="above-text">Wordpress, Figma</span>
             <div class="box-title">
-              Redesign of Drexel Electric Racing's Website (WIP)
+              Redesign of Drexel Electric Racing's Website
             </div>
             <picture>
               <source
@@ -121,31 +183,7 @@
               <img
                 src="./images/sae-home.webp"
                 alt="Home page for Drexel Electric Racing"
-              />
-            </picture>
-          </a>
-          <a
-            href="https://www.cs.drexel.edu/~slb522/CS164/reindeer.html"
-            target="_blank"
-            class="link-box"
-          >
-            <span class="above-text"
-              >A Project From My First Computer Science Class</span
-            >
-            <div class="box-title">Animal Crossing State Machine</div>
-            <picture>
-              <source
-                media="(min-width: 1024px)"
-                srcset="./images/animal-crossing-1024.png"
-              />
-              <source
-                media="(min-width: 690px)"
-                srcset="./images/animal-crossing-690.png"
-              />
-              <source />
-              <img
-                src="./images/animal-crossing.webp"
-                alt="Animal Crossing Project Image"
+                loading="lazy"
               />
             </picture>
           </a>
@@ -158,6 +196,12 @@
         <i class="bx bxl-github"></i>
         <span class="footer-hidden-text"
           >Sophia Bartolacci's GitHub Profile</span
+        >
+      </a>
+      <a href="https://www.figma.com/@0f6bc5a7_6271_4" target="_blank">
+        <i class="bx bxl-figma"></i>
+        <span class="footer-hidden-text"
+          >Sophia Bartolacci's Figma Profile</span
         >
       </a>
       <a href="https://www.linkedin.com/in/sophiabartolacci/" target="_blank">
@@ -173,5 +217,6 @@
         >
       </a>
     </footer>
+    <script src="scripts/dark-mode.js"></script>
   </body>
 </html>
