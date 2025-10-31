@@ -17,13 +17,13 @@
       type="text/css"
     />
     <link
-      href="styles/style.css"
+      href="./styles/style.css"
       media="screen"
       rel="stylesheet"
       type="text/css"
     />
     <link
-      href="styles/resume.css"
+      href="./styles/resume.css"
       media="screen"
       rel="stylesheet"
       type="text/css"
@@ -42,17 +42,15 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
           <li><a href="index.html">Projects</a></li>
           <li><a href="photos.html">Photography</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li>
-            <label class="theme-switch">
-              <input type="checkbox" id="theme-toggle" />
-              <span class="slider"></span>
-            </label>
-          </li>
         </ul>
       </nav>
+      <label class="theme-switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider"></span>
+      </label>
     </header>
     <main>
       <h1>Resume</h1>
@@ -113,7 +111,7 @@
         <div class="experience">
           <h6 class="section">Professional Experience</h6>
           <p class="position">Software Engineer</p>
-          <p class="place">REsurety Inc. | Boston, MA</p>
+          <p class="place"><a href="https://resurety.com/" target="_blank">REsurety Inc.</a> | Boston, MA</p>
           <p class="time-exp">March 2025 - September 2025</p>
           <ul>
             <li>
@@ -139,7 +137,7 @@
             </li>
           </ul>
           <p class="position">Jr Database Developer</p>
-          <p class="place">Webstaurantstore | Lancaster, PA</p>
+          <p class="place"><a href="https://www.webstaurantstore.com/?srsltid=AfmBOopvGvyC6npZhPuMTn32yGvaeyR70fa3bIaCYBKu_KJSnLvo4oaU" target="_blank">Webstaurantstore</a> | Lancaster, PA</p>
           <p class="time-exp">April 2024 - September 2024</p>
           <ul>
             <li>
@@ -162,8 +160,8 @@
             </li>
           </ul>
           <h6 class="section">Projects</h6>
-          <p class="place">
-            DueDateDemon <span>| AWS, Python, NotionAPI, Discord</span>
+          <p class="place project">
+            <a href="due-date-demon.html">DueDateDemon</a> <span>| AWS, Python, NotionAPI, Discord</span>
           </p>
           <p class="time-proj">August 2025 - October 2025</p>
           <ul>
@@ -177,8 +175,8 @@
               secure credential management, eliminating manual database checking
             </li>
           </ul>
-          <p class="place">
-            Blueboard <span>| HTML/CSS, Javascript, Postgres, Fly.io</span>
+          <p class="place project">
+            <a href="blueboard.html">Blueboard</a> <span>| HTML/CSS, Javascript, Postgres, Fly.io</span>
           </p>
           <p class="time-proj">June 2024 - September 2024</p>
           <ul>
@@ -196,8 +194,8 @@
               highlighting key progress and architectural improvements.
             </li>
           </ul>
-          <p class="place">
-            Humble Bundle Website Redesign <span>| Figma</span>
+          <p class="place project">
+            <a href="humble-bundle.html">Humble Bundle Website Redesign</a> <span>| Figma</span>
           </p>
           <p class="time-proj">September 2024 - March 2025</p>
           <ul>
@@ -218,7 +216,7 @@
               reduce cognitive load and highlight key elements
             </li>
           </ul>
-          <p class="place">
+          <p class="place project">
             Drexel Electric Racing Website Redesign <span>| Wordpress</span>
           </p>
           <p class="time-proj">September 2024 - December 2024</p>
@@ -267,55 +265,5 @@
       </a>
     </footer>
     <script src="scripts/dark-mode.js"></script>
-  </body>
-</html>ub"></i>
-        <span class="footer-hidden-text"
-          >Sophia Bartolacci's GitHub Profile</span
-        >
-      </a>
-      <a href="https://www.figma.com/@0f6bc5a7_6271_4" target="_blank">
-        <i class="bx bxl-figma"></i>
-        <span class="footer-hidden-text"
-          >Sophia Bartolacci's Figma Profile</span
-        >
-      </a>
-      <a href="https://www.linkedin.com/in/sophiabartolacci/" target="_blank">
-        <i class="bx bxl-linkedin-square"></i>
-        <span class="footer-hidden-text"
-          >Sophia Bartolacci's LinkedIn Profile</span
-        >
-      </a>
-      <a href="mailto:slb522@drexel.edu">
-        <i class="bx bxs-envelope"></i>
-        <span class="footer-hidden-text"
-          >Sophia Bartolacci's Email Address</span
-        >
-      </a>
-    </footer>
-    <script>
-      const toggleCheckbox = document.getElementById("theme-toggle");
-      const prefersDarkScheme = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      );
-
-      const savedTheme = localStorage.getItem("theme");
-      if (savedTheme) {
-        document.body.classList.toggle("dark-mode", savedTheme === "dark");
-        toggleCheckbox.checked = savedTheme === "dark";
-      } else if (prefersDarkScheme.matches) {
-        document.body.classList.add("dark-mode");
-        toggleCheckbox.checked = true;
-      }
-
-      toggleCheckbox.addEventListener("change", () => {
-        if (toggleCheckbox.checked) {
-          document.body.classList.add("dark-mode");
-          localStorage.setItem("theme", "dark");
-        } else {
-          document.body.classList.remove("dark-mode");
-          localStorage.setItem("theme", "light");
-        }
-      });
-    </script>
   </body>
 </html>

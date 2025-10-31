@@ -34,6 +34,17 @@
     transform: scale(1.05);
 }
 
+p a {
+    color: var(--text-hover);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+p a:hover {
+    color: var(--text-color);
+}
+
 @media (min-width: 560px) and (max-width: 780px) {
     .container {
         flex-wrap: nowrap;

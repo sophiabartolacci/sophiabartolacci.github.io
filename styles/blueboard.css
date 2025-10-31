@@ -1,3 +1,18 @@
+/* Base Elements */
+h1 a {
+    font-family: var(--acorn-font);
+}
+
+/* IDs */
+#link-box2 {
+    background-color: #AEC5A5;
+    border-radius: 35px;
+    height: 50px;
+    padding: 10px 30px;
+    width: 300px;
+}
+
+/* Classes */
 .box-title {
     color: var(--project-text-color);
     font-family: var(--acorn-font);
@@ -7,46 +22,6 @@
 
 .description {
     padding-left: 0;
-}
-
-.link-box {
-    border-radius: 35px;
-    padding: 20px 30px;
-    width: 300px; 
-}
-
-.link-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px; 
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.login-image img {
-    border-radius: 5px;
-    display: block;
-    margin: var(--rhythm) auto;
-}
-
-.login-image {
-    display: flex;
-    justify-content: center;
-}
-
-.website {
-    color: var(--project-text-color);
-    font-family: var(--acorn-font);
-    padding-top: 1rem;
-    text-align: center;
-}
-
-#link-box2 {
-    background-color: #AEC5A5;
-    border-radius: 35px;
-    height: 50px;
-    padding: 10px 30px;
-    width: 300px; 
 }
 
 .description a {
@@ -79,8 +54,10 @@
     color: var(--project-text-color);
 }
 
-h1 a {
-    font-family: var(--acorn-font);
+.link-box {
+    border-radius: 35px;
+    padding: 20px 30px;
+    width: 300px;
 }
 
 .link-box:first-of-type {
@@ -93,6 +70,32 @@ h1 a {
 
 .link-box:nth-of-type(3) {
     background-color: #C78476;
+}
+
+.link-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.login-image {
+    display: flex;
+    justify-content: center;
+}
+
+.login-image img {
+    border-radius: 5px;
+    display: block;
+    margin: var(--rhythm) auto;
+}
+
+.website {
+    color: var(--project-text-color);
+    font-family: var(--acorn-font);
+    padding-top: 1rem;
+    text-align: center;
 }
 
 .website a {
