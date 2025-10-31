@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects</title>
+    <title>Due Date Demon</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -24,6 +24,12 @@
     />
     <link
       href="styles/blueboard.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="styles/due-date-demon.css"
       media="screen"
       rel="stylesheet"
       type="text/css"
@@ -54,30 +60,33 @@
     </header>
     <main>
       <h1>
-        <a href="https://cs375blueboard.fly.dev/" target="_blank">Blueboard</a>
+        <a
+          href="https://github.com/sophiabartolacci/due-date-demon"
+          target="_blank"
+          >Due Date Demon</a
+        >
       </h1>
       <div class="login-image">
         <picture>
           <source
-            media="(min-width: 1280px)"
-            srcset="./images/blueboard-larger.png"
-          />
-          <source
             media="(min-width: 650px)"
-            srcset="./images/blueboard-medium.png"
+            srcset="./images/duedatedemon-large.png"
           />
           <source />
           <img
-            src="./images/blueboard-smaller.webp"
+            src="./images/duedatedemon-small.png"
             alt="Blueboard Login Screen"
           />
         </picture>
       </div>
+
       <div class="link-boxes">
         <div id="link-box2">
           <div class="website">
-            <a href="https://cs375blueboard.fly.dev/" target="_blank"
-              >Explore our full website!</a
+            <a
+              href="https://github.com/sophiabartolacci/due-date-demon"
+              target="_blank"
+              >View the code on GitHub!</a
             >
           </div>
         </div>
@@ -88,21 +97,23 @@
           <div class="description">
             <ul>
               <li>
-                In my web development class, I collaborated with a group of five
-                over five weeks to create
-                <a href="https://cs375blueboard.fly.dev/" target="_blank"
-                  >Blueboard</a
-                >, an interactive online learning platform designed for both
-                students and professors.
+                A serverless bot that automatically checks my Notion database
+                for upcoming deadlines and sends Discord reminders every day at
+                8 AM.
               </li>
               <li>
-                Blueboard offers a variety of tools to enhance the learning
-                experience, including quizzes, course materials, and more.
+                Built with AWS Lambda for serverless execution and Parameter
+                Store for secure credential management, running for less than
+                $1/month.
               </li>
               <li>
-                This project allowed us to work together to design and implement
-                a user-friendly platform that supports both teaching and
-                learning.
+                Amazon Q Developer helped catch security vulnerabilities and
+                document the development process, turning a simple automation
+                into a production-ready system.
+              </li>
+              <li>
+                Inspired by Slack's daily meeting schedules - I wanted a similar
+                lookahead for my class deadlines while learning more about AWS.
               </li>
             </ul>
           </div>
@@ -112,36 +123,34 @@
           <div class="description">
             <ul>
               <li>
-                <strong>User Authentication: </strong>Professors and students
-                can create accounts and log in securely.
+                <strong>Automated Scheduling:</strong> Runs daily at 8 AM using
+                AWS EventBridge triggers with zero manual intervention.
               </li>
               <li>
-                <strong>Quiz Creation and Management: </strong>Professors can
-                create quizzes with various question types, including
-                multiple-choice, short answer, long answer, and image upload.
-                Quizzes can be autograded or manually graded.
+                <strong>Smart Filtering:</strong> Only shows assignments due
+                within 3 days, filtering out completed tasks automatically.
               </li>
               <li>
-                <strong>Course Management: </strong>Professors can create
-                courses, generate registration codes, and manage course
-                materials.
+                <strong>Rich Notifications:</strong> Sends formatted Discord
+                messages with class icons, assignment types, due dates, and
+                notes.
               </li>
               <li>
-                <strong>Student Interaction: </strong>Students can enroll in
-                courses, participate in quizzes, and view grades.
+                <strong>Secure Credential Management:</strong> Uses AWS
+                Parameter Store for secure token storage with automatic
+                environment detection.
               </li>
               <li>
-                <strong>File Upload and Download: </strong>Supports uploading
-                images as part of quiz answers and downloading images from the
-                server.
+                <strong>Production Ready:</strong> Configured for serverless
+                deployment with proper error handling and fault tolerance.
               </li>
               <li>
-                <strong>Session Management: </strong>Ensures secure access to
-                various routes based on user roles (student or professor).
+                <strong>AI-Assisted Development:</strong> Integrated Amazon Q
+                Developer for code review, security analysis, and documentation.
               </li>
               <li>
-                <strong>Deployment Ready: </strong>Configured for deployment on
-                platforms like Fly.io.
+                <strong>CWE-532 Compliant:</strong> No sensitive data exposure
+                in logs with least-privilege IAM permissions.
               </li>
             </ul>
           </div>
@@ -150,15 +159,19 @@
           <div class="box-title">Technology Stack</div>
           <div class="description">
             <ul>
-              <li><strong>Backend: </strong>Node.js, Express.js</li>
-              <li><strong>Frontend: </strong>HTML, CSS, Javascript</li>
-              <li><strong>Database: </strong>PostgreSQL</li>
+              <li><strong>Backend:</strong> Python 3.9+, AWS Lambda, Boto3</li>
+              <li><strong>APIs:</strong> Notion API, Discord.py</li>
               <li>
-                <strong>Authentication: </strong>Session-based using
-                express-session
+                <strong>Infrastructure:</strong> EventBridge, Parameter Store,
+                CloudWatch
               </li>
               <li>
-                <strong>Deployment: </strong>Configured for Fly.io deployment
+                <strong>Development:</strong> Amazon Q Developer, Makefile
+                automation
+              </li>
+              <li>
+                <strong>Security:</strong> IAM roles, encrypted parameter
+                storage
               </li>
             </ul>
           </div>
