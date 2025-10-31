@@ -1,0 +1,18 @@
+/* Due Date Demon Specific Styles */
+
+/* Media Queries */
+
+@media screen and (min-width: 750px) {
+    .link-box:first-of-type {
+        height: 820px;
+    }
+    .link-box:nth-of-type(3) {
+        height: 490px;
+    }
+}
+
+@media screen and (min-width: 1293px) {
+    .link-box:nth-of-type(3) {
+        height: 490px;
+    }
+}

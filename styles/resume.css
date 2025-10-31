@@ -1,11 +1,12 @@
+/* Base Elements */
 h2 {
     padding-top: 2.5rem;
 }
 
 h2, h3, h4, h5, h6 {
     font-family: var(--acorn-font);
-    font-weight: bold;
     font-size: var(--rhythm);
+    font-weight: bold;
     margin-bottom: 0;
     margin-top: var(--rhythm);
     padding-left: 0.9375rem;
@@ -15,56 +16,27 @@ p {
     padding: 0 0.9375rem;
 }
 
-.section {
-    font-size: 2rem;
-    padding: 2rem 0 0 0;
-    text-align: center;
-}
-
-.position, .place {
-    color: var(--text-color);
-    font-size: 1rem;
-    font-weight: bold;
-    margin: .25rem 0;
-    text-align: left;
-}
-
-.position {
-    margin: 2rem 0 0 0;
-}
-
-.time {
-    font-style: italic;
-    margin: .25rem 0;
-    text-align: left;
-}
-
-.parent {
-    margin: 0 auto;
-}
-
+/* Combinators */
 h2 + ul {
-    padding-left: 0;
     margin: 0;
+    padding-left: 0;
+}
 
-    li {
+h2 + ul li {
     font-weight: bold;
     margin-top: .35rem;
     padding-left: 1rem;
-    }
 }
 
-p + ul {
-    li {
-        margin: 1rem 0;
-        line-height: 1.5rem;
-    }
+p + ul li {
+    line-height: 1.5rem;
+    margin: 1rem 0;
 }
 
-.parent ul {
-    margin-top: .5rem;
-    padding-left: var(--rhythm * 1.35);
-    padding-right: var(--rhythm);
+/* Classes */
+.parent {
+    animation: fadeInUp 1s ease-out 0.3s both;
+    margin: 0 auto;
 }
 
 .parent li {
@@ -73,22 +45,118 @@ p + ul {
     margin-bottom: .35rem;
 }
 
+.parent ul {
+    margin-top: .5rem;
+    padding-left: var(--rhythm * 1.35);
+    padding-right: var(--rhythm);
+}
+
+.place {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: .25rem 0;
+    text-align: left;
+}
+
+.place a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.place a:hover {
+    color: var(--text-hover);
+}
+
+.place span {
+    font-size: 0.95rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.place:first-of-type {
+    margin-top: .25rem;
+}
+
+.position {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 3rem 0 0 0;
+    text-align: left;
+}
+
+.position:first-of-type {
+    margin-top: .25rem;
+}
+
+.project {
+    margin-top: 3rem;
+}
+
+.project:first-of-type {
+    margin-top: .25rem;
+}
+
+.section {
+    animation: fadeInUp 0.8s ease-out both;
+    font-size: 2rem;
+    padding: 2rem 0 0 0;
+    text-align: center;
+}
+
 .section:nth-of-type(2) {
-    padding: 3.5rem 0 0 0;
+    padding: 3.5rem 0 2rem 0;
+}
+
+.time {
+    margin: .25rem 0;
+    text-align: left;
+}
+
+.time-exp {
+    font-style: italic;
+    margin: .25rem 0;
+    text-align: left;
+}
+
+.time-proj {
+    font-style: normal;
+    margin: .25rem 0;
+    text-align: left;
+}
+
+@media screen and (max-width: 829px) {
+    .parent {
+        padding: 0 1rem;
+    }
 }
 
 @media screen and (min-width: 650px) {
     p {
-      font-size: .9rem;
+        font-size: .9rem;
     }
 }
 
 @media screen and (min-width: 830px) {
     .parent {
         display: grid;
-        gap: 1.5rem;
+        gap: 2rem;
         grid-template-columns: 35% 65%;
-        justify-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .education {
+        align-self: start;
+        animation: fadeInUp 1s ease-out 0.5s both;
+    }
+
+    .experience {
+        align-self: start;
+        animation: fadeInUp 1s ease-out 0.7s both;
     }
 
     h2, h3, h4, h5, h6 {
@@ -106,21 +174,25 @@ p + ul {
         margin-top: 3rem;
     }
 
-    .section {
-        font-size: 2.5rem;
-    }
-    
-    .section:nth-of-type(2) {
-        padding: 4.5rem 0 0 0;
-    }
-
-    .position, .place, .time {
-        font-size: 1.25rem;
-    }
-
     .parent li {
         font-size: 1.125rem;
         line-height: 1.5rem;
+    }
+
+    .position, .place {
+        font-size: 1.25rem;
+    }
+
+    .section {
+        font-size: 2.5rem;
+    }
+
+    .section:nth-of-type(2) {
+        padding: 4.5rem 0 1rem 0;
+    }
+
+    .time, .time-exp, .time-proj {
+        font-size: 1rem;
     }
 
     .experience li {
