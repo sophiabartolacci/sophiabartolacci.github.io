@@ -5,23 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-    <!-- Preload critical resources -->
-    <link
-      rel="preload"
-      href="./fonts/montserrat.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="./fonts/acorn-medium.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-    <link rel="preload" href="./images/light-mode.JPEG" as="image" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -58,9 +42,9 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
           <li><a href="index.html">Projects</a></li>
           <li><a href="photos.html">Photography</a></li>
-          <li><a href="resume.html">Resume</a></li>
         </ul>
       </nav>
       <label class="theme-switch">
@@ -70,7 +54,7 @@
     </header>
     <main>
       <h1>Hi! I'm Sophia</h1>
-      <p>
+      <p class="subtitle">
         I’m a Computer Science student at
         <a href="https://drexel.edu/" target="_blank">Drexel University</a> with
         a passion for creating innovative digital experiences.
@@ -82,37 +66,18 @@
               >AWS Lambda, Python, Notion API, Discord</span
             >
             <div class="box-title">Due Date Demon</div>
-            <div class="terminal-preview-small">
-              <div class="terminal-header-small">
-                <div class="terminal-buttons-small">
-                  <span class="terminal-button-small red"></span>
-                  <span class="terminal-button-small yellow"></span>
-                  <span class="terminal-button-small green"></span>
-                </div>
-                <span class="terminal-title-small">Discord Bot Output</span>
-              </div>
-              <div class="terminal-content-small">
-                <div class="terminal-line-small">
-                  🚨 <strong>2 ASSIGNMENTS DUE SOON!</strong>
-                </div>
-                <div class="terminal-line-small"></div>
-                <div class="terminal-line-small">─────────────────────────</div>
-                <div class="terminal-line-small">
-                  📚 <strong>Upcoming Assignments</strong>
-                </div>
-                <div class="terminal-line-small">─────────────────────────</div>
-                <div class="terminal-line-small"></div>
-                <div class="terminal-line-small">
-                  💻 <strong>CS 380: Database Project</strong>
-                </div>
-                <div class="terminal-line-small">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📐 Project
-                </div>
-                <div class="terminal-line-small">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📅 12/22 11:59PM
-                </div>
-              </div>
-            </div>
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcset="./images/duedatedemon-small.png"
+              />
+              <source />
+              <img
+                src="./images/duedatedemon-small.png"
+                alt="DueDateDemon Discord Message"
+                loading="lazy"
+              />
+            </picture>
           </a>
           <a href="blueboard.html" class="link-box">
             <span class="above-text">Fly.io, Node.js, PostgreSQL</span>
@@ -144,19 +109,19 @@
             <picture>
               <source
                 media="(min-width: 1280px)"
-                srcset="./images/humble-bundle-medium.png"
+                srcset="./images/humble-bundle-1280.png"
               />
               <source
                 media="(min-width: 1024px)"
-                srcset="./images/humble-bundle-smaller.png"
+                srcset="./images/humble-bundle-1024.png"
               />
               <source
-                media="(min-width: 760px)"
-                srcset="./images/humble-bundle-smaller.png"
+                media="(min-width: 690px)"
+                srcset="./images/humble-bundle-760.png"
               />
               <source />
               <img
-                src="./images/humble-bundle-smaller.png"
+                src="./images/humble-bundle-smaller2.png"
                 alt="Humble Bundle Redesign"
                 loading="lazy"
               />

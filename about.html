@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>About - Sophia Bartolacci</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -30,6 +30,7 @@
     />
   </head>
   <body>
+    <!-- Header with Navigation -->
     <header>
       <a href="index.html" class="home">Sophia Bartolacci</a>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
@@ -42,53 +43,132 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
           <li><a href="index.html">Projects</a></li>
           <li><a href="photos.html">Photography</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li>
-            <label class="theme-switch">
-              <input type="checkbox" id="theme-toggle" />
-              <span class="slider"></span>
-            </label>
-          </li>
         </ul>
       </nav>
+      <label class="theme-switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider"></span>
+      </label>
     </header>
-    <main>
-      <h1>About Me</h1>
-      <h2>
-        I’m Sophia Bartolacci, a Computer Science student studying at
-        <a href="https://drexel.edu/" target="_blank">Drexel University</a>.
-      </h2>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>About Me</h1>
+        <div class="role">
+          Computer Science Student at
+          <a href="https://drexel.edu/" target="_blank">Drexel University</a>
+        </div>
+        <p>
+          I'm a fourth-year student concentrating in Artificial Intelligence and
+          minoring in UI/UX Design and Data Science.
+        </p>
+        <p>
+          I'm passionate about creating technology that feels intuitive by
+          combining thoughtful design with intelligent systems.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Section 1 -->
+    <section class="about-section">
+      <div class="section-content">
+        <div class="text-block">
+          <h2>My goal is to make digital experiences seamless</h2>
+          <p>
+            Whether I'm building full-stack applications, analyzing data, or
+            designing in Figma, I enjoy finding creative ways to connect
+            functionality with user experience.
+          </p>
+          <p>
+            My academics have helped me build a wide range of skills in software
+            development, data analysis, and user-centered design that I love
+            applying to real-world projects.
+          </p>
+        </div>
+        <div class="image-block">
+          <img src="./photos/about/1-hotel.png" alt="Hotel photography" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section 2 -->
+    <section class="about-section">
+      <div class="section-content reverse">
+        <div class="text-block">
+          <h2>Always learning and growing</h2>
+          <p>
+            I'm always looking for opportunities to learn, grow, and collaborate
+            with others. Whether it's through a new project or a challenging
+            problem to solve, I'm eager to continue expanding my skills.
+          </p>
+          <p>
+            I believe the best solutions come from combining technical expertise
+            with genuine curiosity and a user-first mindset.
+          </p>
+        </div>
+        <div class="image-block">
+          <img src="./photos/about/2-city.png" alt="Tokyo Sky Tower" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Photography Section -->
+    <section class="photography-section">
+      <h2>Beyond Technology</h2>
       <p>
-        At Drexel, I am also pursuing minors in both Data Science and UI/UX
-        Design.
+        Outside of tech, I've always loved photography. Capturing the perfect
+        shot helps me slow down, pay attention to the details, and see things
+        from new perspectives.
       </p>
       <p>
-        I’ve always been passionate about solving complex problems and building
-        meaningful digital experiences, whether it's through clean, efficient
-        code or thoughtfully designed interfaces. My academics have helped me
-        build a wide range of skills in software development, data analysis, and
-        user-centered design, that I love applying to real-world projects.
+        That same mindset influences how I approach design and problem-solving.
+        Photography provides a creative outlet to get away from the analytical
+        aspects of college.
       </p>
-      <h3>
-        Outside of school, photography has been a passion of mine for as long as
-        I can remember.
-      </h3>
-      <p>
-        There’s something incredibly satisfying about getting the perfect shot,
-        where everything aligns just right. Photography gives me a chance to
-        slow down, appreciate the details, and see the world through a different
-        lens. It provides a creative outlet for me to get away from the
-        analytical aspects of college.
-      </p>
-      <p>
-        I’m always looking for opportunities to learn, grow, and collaborate
-        with others. Whether it’s through a new project or a challenging problem
-        to solve, I’m eager to continue expanding my skills and making a
-        positive impact.
-      </p>
-    </main>
+      <div class="photo-grid">
+        <div class="photo-placeholder">
+          <img src="./photos/about/3-temple.png" alt="Temple photography" />
+        </div>
+        <div class="photo-placeholder">
+          <img
+            src="./photos/about/4-people.png"
+            alt="People Walking in Street"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+      <h2>What Drives Me</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <h3>Problem Solving</h3>
+          <p>
+            I love tackling complex challenges and finding elegant solutions
+            through code and design.
+          </p>
+        </div>
+        <div class="value-card">
+          <h3>User-Centered</h3>
+          <p>
+            Every project starts with understanding the people who will use it
+            and what they need.
+          </p>
+        </div>
+        <div class="value-card">
+          <h3>Continuous Growth</h3>
+          <p>
+            Technology evolves rapidly, and I'm committed to staying curious and
+            learning every day.
+          </p>
+        </div>
+      </div>
+    </section>
     <footer>
       <h1>Contact</h1>
       <a href="https://github.com/sophiabartolacci" target="_blank">
@@ -116,6 +196,7 @@
         >
       </a>
     </footer>
+
     <script src="scripts/dark-mode.js"></script>
   </body>
 </html>

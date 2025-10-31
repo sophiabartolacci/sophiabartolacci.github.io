@@ -16,6 +16,28 @@
         transform: translateY(0);
     }
 }
+
+@keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
   
 :root {
     --acorn-font: 'Acorn', sans-serif;
@@ -54,8 +76,9 @@ footer {
 }
 
 h1 {
+    animation: fadeInScale 0.8s ease-out;
     font-family: var(--acorn-font);
-    font-size: 2.8125rem;
+    font-size: 4rem;
     margin: 0;
     padding-top: 60px;
     text-align: center;
@@ -66,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
+    animation: slideInFromTop 0.6s ease-out;
     background: var(--nav-background-hover);
     height: var(--nav-height);
     left: 0;
@@ -87,9 +111,13 @@ nav {
 
 p {
     color: var(--lighter-text-color);
-    font-size: .875rem;
+    font-size: 1.25rem;
     font-weight: 500;
     text-align: center;
+}
+
+.subtitle {
+    animation: fadeInUp 1s ease-out 0.3s both;
 }
 
 strong, b {
@@ -138,14 +166,37 @@ strong, b {
 }
 
 .link-box {
+    animation: fadeInUp 0.8s ease-out both;
     border-radius: 35px;
+    padding-bottom: 0;
     padding-left: 30px;
     padding-top: 20px;
     transition: transform 0.2s ease;
     width: 300px; 
 }
 
+.link-box:hover {
+    transform: scale(1.05);
+}
+
+.link-box:nth-child(1) {
+    animation-delay: 0.6s;
+}
+
+.link-box:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+.link-box:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.link-box:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
 .link-boxes {
+    animation: fadeInUp 0.6s ease-out 0.4s both;
     display: flex;
     flex-wrap: wrap;
     gap: 30px; 
@@ -155,14 +206,16 @@ strong, b {
 
 .slider {
     background-color: #a8b6b4;
-    border-radius: 34px;
+    border-radius: 50px;
     bottom: 0;
     cursor: pointer;
+    height: 40px;
     left: 0;
     position: absolute;
     right: 0;
     top: 0;
     transition: 0.4s;
+    width: 90px;
 }
 
 .theme-switch {
@@ -170,15 +223,33 @@ strong, b {
 }
 
 footer h1 {
+    animation: fadeInUp 1.2s ease-out 0.5s both;
     margin: 0;
     padding-top: 30px;
 }
 
 footer a i {
+    animation: fadeInUp 1.4s ease-out 0.7s both;
     font-size: 1.5625rem;
     margin-top: 8px;
     padding-bottom: 40px;
     transition: transform 0.2s ease;
+}
+
+footer a:nth-child(2) i {
+    animation-delay: 0.8s;
+}
+
+footer a:nth-child(3) i {
+    animation-delay: 0.9s;
+}
+
+footer a:nth-child(4) i {
+    animation-delay: 1s;
+}
+
+footer a:nth-child(5) i {
+    animation-delay: 1.1s;
 }
 
 footer a i:hover {
@@ -213,7 +284,7 @@ input:checked + .slider {
 
 input:checked + .slider:before {
     background-image: url("../images/moon.png");
-    transform: translateX(36px);
+    transform: translateX(45px);
 }
 
 .link-box:first-of-type {
@@ -282,7 +353,7 @@ p a {
 }
 
 p a:hover {
-    color: var(--text-hover);
+    color: var(--text-color);
 }
 
 .slider:before {
@@ -290,19 +361,18 @@ p a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
-    bottom: 4px;
+    bottom: 1px;
     content: "";
-    height: 36px;
-    left: 4px;
+    height: 75px;
+    left: -17px;
     position: absolute;
+    top: -18px;
     transition: 0.4s;
-    width: 36px;
+    width: 75px;
 }
 
 .theme-switch input {
-    height: 0;
-    opacity: 0;
-    width: 0;
+    display: none;
 }
 
 header label span:nth-child(1) {
@@ -319,12 +389,12 @@ header label span:nth-child(3) {
 
 @media screen and (min-width: 650px) {
     h1 {
-        font-size: 3.75rem;
+        font-size: 5rem;
         padding-top: 100px;
     }
 
     p {
-        font-size: 1.125rem;
+        font-size: 1.5rem;
     }
 
     footer h1 {
@@ -338,13 +408,7 @@ header label span:nth-child(3) {
 
 @media screen and (max-width: 1023px) {
     .theme-switch {
-        display: inline-block;
-        height: 44px;
-        position: absolute;
-        right: 1rem;
-        top: 8px;
-        width: 80px;
-        z-index: 1002;
+        display: none;
     }
 }
 
@@ -363,6 +427,7 @@ header label span:nth-child(3) {
     } 
 
     nav {
+        animation: slideInFromTop 0.8s ease-out 0.2s both;
         background: none;
         display: flex;
         grid-column: 2;
@@ -377,7 +442,7 @@ header label span:nth-child(3) {
         background-color: transparent;
         display: flex;
         font-family: var(--acorn-font);
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         grid-column: 1/2;
         height: 50px;
         justify-content: left;
@@ -400,10 +465,10 @@ header label span:nth-child(3) {
     .theme-switch {
         display: inline-block;
         grid-column: 3;
-        height: 44px;
+        height: 50px;
         justify-self: end;
-        margin: 35px 0 15px 35px;
-        width: 80px;
+        margin: 0 35px 15px 35px;
+        width: 100px;
     }
 
     .home:hover {
@@ -435,7 +500,7 @@ header label span:nth-child(3) {
 
 @media screen and (min-width: 1280px) {
     h1 {
-        font-size: 6.875rem;
+        font-size: 8rem;
         padding-top: 6rem;
     }
 }
