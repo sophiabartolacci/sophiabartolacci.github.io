@@ -87,27 +87,26 @@ p + ul li {
     text-align: left;
 }
 
-.position:first-of-type {
-    margin-top: .25rem;
-}
-
 .project {
     margin-top: 3rem;
 }
 
-.project:first-of-type {
-    margin-top: .25rem;
-}
-
+/* Major Section Headings */
 .section {
     animation: fadeInUp 0.8s ease-out both;
     font-size: 2rem;
-    padding: 2rem 0 0 0;
+    margin: 3rem 0 1.5rem 0;
+    padding: 0;
     text-align: center;
 }
 
-.section:nth-of-type(2) {
-    padding: 3.5rem 0 2rem 0;
+.experience > .section:first-child {
+    margin-top: 2rem;
+}
+
+.section + .position,
+.section + .project {
+    margin-top: 0;
 }
 
 .time {
@@ -127,18 +126,21 @@ p + ul li {
     text-align: left;
 }
 
+/* Mobile */
 @media screen and (max-width: 829px) {
     .parent {
         padding: 0 1rem;
     }
 }
 
+/* Tablet */
 @media screen and (min-width: 650px) {
     p {
         font-size: .9rem;
     }
 }
 
+/* Desktop */
 @media screen and (min-width: 830px) {
     .parent {
         display: grid;
@@ -162,13 +164,22 @@ p + ul li {
     h2, h3, h4, h5, h6 {
         margin-top: 2.75rem;
     }
+
+    .section {
+        margin: 3rem 0 1.5rem 0;
+    }
+
+    .experience > .section:first-child {
+        margin-top: 2rem;
+    }
 }
 
+/* Large Desktop */
 @media screen and (min-width: 1280px) {
     h2 {
         padding-top: 3rem;
     }
-    
+
     h2, h3, h4, h5, h6 {
         font-size: 1.75rem;
         margin-top: 3rem;
@@ -179,19 +190,23 @@ p + ul li {
         line-height: 1.5rem;
     }
 
-    .position, .place {
+    .position,
+    .place {
         font-size: 1.25rem;
     }
 
     .section {
         font-size: 2.5rem;
+        margin: 3rem 0 1.5rem 0;
     }
 
-    .section:nth-of-type(2) {
-        padding: 4.5rem 0 1rem 0;
+    .experience > .section:first-child {
+        margin-top: 2rem;
     }
 
-    .time, .time-exp, .time-proj {
+    .time,
+    .time-exp,
+    .time-proj {
         font-size: 1rem;
     }
 
@@ -200,8 +215,14 @@ p + ul li {
     }
 }
 
+/* Extra Large Desktop */
 @media screen and (min-width: 1550px) {
     .parent {
         max-width: 1550px;
+    }
+
+    .section {
+        padding: 0 0 1.5rem 0;
+
     }
 }
